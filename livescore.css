@@ -1,0 +1,88 @@
+body
+{
+    background-color: rgb(166, 232, 231);
+    background: linear-gradient(to left, rgb(244, 253, 251),  rgb(238, 255, 250) );
+}
+#liv2
+{
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bolder;
+}
+.livestr
+{
+    display: flex;
+}
+.container1
+
+    
+{
+    border: 2px solid black;
+    border-radius: 7px;
+    padding: 8px;
+    margin-left: 70px;
+    margin-right: 250px;
+    padding-right: 100px;
+    box-shadow: 5px 5px rgb(18, 78, 151);
+}
+.container2
+
+    
+{
+    border: 2px solid black;
+    border-radius: 7px;
+    padding: 8px;
+    padding-right: 50px;
+    margin-left: -160px;
+    box-shadow: 5px 5px rgb(18, 78, 151);
+}
+.container3
+
+    
+{
+    border: 2px solid black;
+    border-radius: 7px;
+    padding: 8px;
+    padding-right: 60px;
+    margin-left: 100px;
+    box-shadow: 5px 5px rgb(18, 78, 151);
+}
+.sche
+{
+    display: flex;
+}
+
+.container4
+
+    
+{
+    border: 2px solid black;
+    border-radius: 7px;
+    padding: 8px;
+    margin-left: 70px;
+    margin-right: 250px;
+    padding-right: 100px;
+    box-shadow: 5px 5px rgb(18, 78, 151);
+}
+.container5
+
+    
+{
+    border: 2px solid black;
+    border-radius: 7px;
+    padding: 8px;
+    padding-right: 50px;
+    margin-left: -160px;
+    box-shadow: 5px 5px rgb(18, 78, 151);
+}
+.container6
+
+    
+{
+    border: 2px solid black;
+    border-radius: 7px;
+    padding: 8px;
+    padding-right: 60px;
+    margin-left: 100px;
+    box-shadow: 5px 5px rgb(18, 78, 151);
+}

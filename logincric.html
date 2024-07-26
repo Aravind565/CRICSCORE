@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login/Sign Up</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="logincric.css">
+    <script src="login.js"></script>
+</head>
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+  <div class="log">
+    <img id="cric"src="Cric.png" height="170px" width="220px"><br><br>
+    <h2 style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; text-align: center;"><b>WELCOME TO CRICSCORE</b></h2><br>
+   
+    <section class="vh-100">
+        <div class="container py-5 h-100">
+          <div class="row d-flex align-items-center justify-content-center h-100">
+            <div class="col-md-8 col-lg-7 col-xl-6 ">
+              <img style="margin-bottom: 100px; box-shadow: 3px 8px 8px 8px rgba(0, 0, 0, 0.2), 3px 8px 30px 7px rgba(0,0,0,0.19);" src="https://resources.pulse.icc-cricket.com/photo-resources/2022/10/15/d75992c9-5657-42fa-b164-47093d31cabe/GettyImages-1433495698.jpg?width=640&height=360"
+                  height="600px" width="710px">
+            </div>
+            <div class="col-md-7 col-lg-5 col-xl-5 offset-xl-1">
+              <form>
+              
+                <div class="form-outline mb-4">
+                  <h2 id="txt">SIGN IN / REGISTER</h2><br>
+                  <input type="email" id="form1Example13" class="form-control form-control-lg" required />
+                  <label class="form-label" for="form1Example13" >Email address</label>
+                </div>
+      
+                
+                <div class="form-outline mb-4">
+                  <input type="password" id="form1Example23" class="form-control form-control-lg" required />
+                  <label class="form-label" for="form1Example23" >Password</label>
+                </div>
+      
+                <div class="d-flex justify-content-around align-items-center mb-4">
+                  
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="form1Example3" checked />
+                    <label class="form-check-label" for="form1Example3"> Remember me </label>
+                  </div>
+                  <a href="forgot.html">Forgot password?</a>
+                </div>
+      
+                <p id="message"></p>
+
+                <button type="button" class="btn btn-primary btn-lg btn-block txtcen" onclick="login()">Sign in</button>
+      
+                <div class="divider d-flex align-items-center my-4">
+                  <p class="text-center fw-bold mx-3 mb-0 text-muted">OR</p>
+                </div>
+      
+                <a class="btn btn-primary btn-lg btn-block subcen" style="background-color: #3b5998" href="https://www.bing.com/ck/a?!&&p=522b1fe8f93df5a2JmltdHM9MTY3NjU5MjAwMCZpZ3VpZD0wNDYyNDIwMy0wZGY4LTZhNTEtMzVlZS01MDc0MGM1NTZiMzEmaW5zaWQ9NTE4Mg&ptn=3&hsh=3&fclid=04624203-0df8-6a51-35ee-50740c556b31&psq=facebook+login+page&u=a1aHR0cHM6Ly93d3cuZmFjZWJvb2suY29tL2xvZ2luLnBocC8&ntb=1"
+                  role="button">
+                  <i class="fab fa-facebook-f me-2 txtcen1"></i><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAb1BMVEU6VZ////82Up4zUJ1UbKx4ibswTpyMmsQ5V6EtTJupss8nSJnN0+WVosgqSpo4U56eqcyDksDj5vBwgbb3+PxFXqNabqt9jb3S2OhidbC9xdy3v9l0hLjZ3etLY6bq7fTEyt4dQpdJYqekrs2uttK97JEgAAADFUlEQVR4nO3c2XLiMBBAUUZmM3IsFsNgSIAk/P83TsLzjCNbI3c3de9rqlw+BV7VZDIhIiIiIiIiIiIiIiIiIlJeCM4VxbzsrJDey8G50s/3h91ss3jp7LdJYii8262rbfPr545eem/753y9qWJwjypzwqJuT7E6i0JX7459fOaEvn3r5zMmLPy5r8+W0L9Gn15MCkO9GuAzJHSh9xFoS1hcrsOAVoTzdsghaEhYTAcDbQjdfjjQhDAshx6DRoShrhKAFoR+nQI0ICzaJKABYZlyEFoQ1p9pQPVCd0m4UJgQ+lsiULvQXVKB2oW+1ysZg8KwTAYqF5ZpF3sDQr99cqFLvJ3RL0y+2usXDnw1Y0YYUh58TQiL3X8Aql57Kvschs3xdF/9pftC8fphj3vSalZ6X5tbA/axJ5rtzhdBem+HVEeeaKq55s+po1DHAW/vJj+/yfdifdxX1OYX9LuwjxIejH5Fv3LTGOBJ8eXup+KEH056P4cXJby+S+9mQlHCUy29mwlFCddz6d1MKEq4sXsmjRTOEGoOIUL9IUSoP4QI9YcQof4QItQfQoT6Q4hQR27+78qYucRX37GFR7Jrb65ddBQz1Hbv2sCjpSixvEcgEitlhcN+cNenRnZxagThm+wK6ghC4TXiEYSr8tmFwstvIwhb2XX+EYR72St+fmEj6htDuBW+a8svPArPauQXnp9e+CI8jZJfKP38mF8ofDnML2wuwsOn2YVX6ena7MKt9PRpduHt6YUr6eHM7MKF9HBmduGr9OvU7MKp9BR4bmEjDcwulJ9zzy2U/+1hbqH0s1N+4afsq8QRhPKT/LmFB+kb7+xC6Tua7ELhdacRhOLPTtmFCv7ZQOY14LP4xWISlh2FqFkM17UF8VPpF7Hjb3HTJl2nSwXAzp5jnqYrhAj1hxCh/hAi1B9ChPpDiFB/CBHqDyFC/SFEqD+ECPWHEKH+ECLUH0KE+kOIUH8IEeoPIUL9IUSoP4QI9YcQof4QItQfQoT6Q4hQfwgR6g8hQv0hRKg/hAj1hxCh/hAi1B9ChD36A+1ASVvVoq0WAAAAAElFTkSuQmCC" height="40px" width="40"> Continue with Facebook
+                </a><br><br>
+                <a class="btn btn-primary btn-lg btn-block subcen2" style="background-color: #2da2fb" href="https://www.bing.com/ck/a?!&&p=9df1533129b74351JmltdHM9MTY3NjU5MjAwMCZpZ3VpZD0wNDYyNDIwMy0wZGY4LTZhNTEtMzVlZS01MDc0MGM1NTZiMzEmaW5zaWQ9NTE3Nw&ptn=3&hsh=3&fclid=04624203-0df8-6a51-35ee-50740c556b31&psq=twitter+login+page&u=a1aHR0cHM6Ly90d2l0dGVyLmNvbS9sb2dpbg&ntb=1"
+                  role="button">
+                  <i class="fab fa-twitter me-2 txtcen2"></i><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQlERHZmU2hWI79OeVNpdXI1Kk-2vpUHr5AAtZt01j_VlhEpgg1mawc&usqp=CAU" height="40px" width="40px">Continue with Twitter</a>
+      
+              </form>
+            
+            </div>
+          </div>
+        </div>
+      
+      </section>
+    
+    </div>
+    
+      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
+</body>
+</html>

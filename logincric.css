@@ -1,0 +1,61 @@
+.divider:after,
+.divider:before {
+content: "";
+flex: 1;
+height: 1px;
+background: #eee;
+}
+.txtcen
+{
+    margin-left: 160px;
+    padding-right: 75px;
+    padding-left: 75px;
+}
+.txtcen1
+{
+    margin-left: 110px;
+}
+.txtcen2
+{
+    margin-left: 112px;
+}
+.subcen
+{
+    padding-right: 140px ;
+    padding-left: 6px;
+}
+.subcen2
+{
+    padding-right: 170px ;
+    padding-left: 6px;
+}
+#cric
+{
+    text-align: center;
+    margin-left: 650px;
+}
+#txt
+{
+    
+  
+    margin-left: 120px;
+}
+.log
+{
+    
+    background-color: rgb(166, 232, 231);
+    background: linear-gradient(to left, rgb(244, 253, 251),  rgb(238, 255, 250) );
+}
+.vh-100
+{
+    border: 2px solid black;
+    border-radius: 6px;
+    margin-left: 50px;
+    margin-right: 30px;
+   
+    
+}
+#message
+{
+    text-align: center;
+}
